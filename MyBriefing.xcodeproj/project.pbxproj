@@ -6,14 +6,90 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6E1D415F2FD222F20093AA05 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1D415E2FD222F20093AA05 /* WidgetKit.framework */; };
+		6E1D41612FD222F20093AA05 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1D41602FD222F20093AA05 /* SwiftUI.framework */; };
+		6E1D416C2FD222F30093AA05 /* MyBriefingWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6E1D415C2FD222F20093AA05 /* MyBriefingWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6E4F172D2FC62BA3002E99C3 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F172C2FC62BA3002E99C3 /* HealthManager.swift */; };
+		6E4F172F2FC631EE002E99C3 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F172E2FC631EE002E99C3 /* CalendarManager.swift */; };
+		6E4F17312FC633F5002E99C3 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F17302FC633F5002E99C3 /* WorkoutManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E1D416A2FD222F30093AA05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E017EE52FC5F4B1004C8831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E1D415B2FD222F20093AA05;
+			remoteInfo = MyBriefingWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E1D41712FD222F30093AA05 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6E1D416C2FD222F30093AA05 /* MyBriefingWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6E017EED2FC5F4B1004C8831 /* MyBriefing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBriefing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1D415C2FD222F20093AA05 /* MyBriefingWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyBriefingWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1D415E2FD222F20093AA05 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		6E1D41602FD222F20093AA05 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		6E1D41742FD223520093AA05 /* MyBriefingWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyBriefingWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6E4F172C2FC62BA3002E99C3 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		6E4F172E2FC631EE002E99C3 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		6E4F17302FC633F5002E99C3 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6E1D416D2FD222F30093AA05 /* Exceptions for "MyBriefingWidget" folder in "MyBriefingWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6E1D415B2FD222F20093AA05 /* MyBriefingWidgetExtension */;
+		};
+		6E1D41762FD223900093AA05 /* Exceptions for "MyBriefing" folder in "MyBriefingWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/WidgetSharedData.swift,
+			);
+			target = 6E1D415B2FD222F20093AA05 /* MyBriefingWidgetExtension */;
+		};
+		6E1D41782FD223AC0093AA05 /* Exceptions for "MyBriefing" folder in "MyBriefing" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6E017EEC2FC5F4B1004C8831 /* MyBriefing */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6E017EEF2FC5F4B1004C8831 /* MyBriefing */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E1D41782FD223AC0093AA05 /* Exceptions for "MyBriefing" folder in "MyBriefing" target */,
+				6E1D41762FD223900093AA05 /* Exceptions for "MyBriefing" folder in "MyBriefingWidgetExtension" target */,
+			);
 			path = MyBriefing;
+			sourceTree = "<group>";
+		};
+		6E1D41622FD222F20093AA05 /* MyBriefingWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E1D416D2FD222F30093AA05 /* Exceptions for "MyBriefingWidget" folder in "MyBriefingWidgetExtension" target */,
+			);
+			path = MyBriefingWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,14 +102,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E1D41592FD222F20093AA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1D41612FD222F20093AA05 /* SwiftUI.framework in Frameworks */,
+				6E1D415F2FD222F20093AA05 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6E017EE42FC5F4B1004C8831 = {
 			isa = PBXGroup;
 			children = (
+				6E1D41742FD223520093AA05 /* MyBriefingWidgetExtension.entitlements */,
 				6E017EEF2FC5F4B1004C8831 /* MyBriefing */,
+				6E1D41622FD222F20093AA05 /* MyBriefingWidget */,
+				6E1D415D2FD222F20093AA05 /* Frameworks */,
 				6E017EEE2FC5F4B1004C8831 /* Products */,
+				6E4F172C2FC62BA3002E99C3 /* HealthManager.swift */,
+				6E4F172E2FC631EE002E99C3 /* CalendarManager.swift */,
+				6E4F17302FC633F5002E99C3 /* WorkoutManager.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,8 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				6E017EED2FC5F4B1004C8831 /* MyBriefing.app */,
+				6E1D415C2FD222F20093AA05 /* MyBriefingWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6E1D415D2FD222F20093AA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D415E2FD222F20093AA05 /* WidgetKit.framework */,
+				6E1D41602FD222F20093AA05 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +156,12 @@
 				6E017EE92FC5F4B1004C8831 /* Sources */,
 				6E017EEA2FC5F4B1004C8831 /* Frameworks */,
 				6E017EEB2FC5F4B1004C8831 /* Resources */,
+				6E1D41712FD222F30093AA05 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E1D416B2FD222F30093AA05 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				6E017EEF2FC5F4B1004C8831 /* MyBriefing */,
@@ -69,6 +172,28 @@
 			productName = MyBriefing;
 			productReference = 6E017EED2FC5F4B1004C8831 /* MyBriefing.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6E1D415B2FD222F20093AA05 /* MyBriefingWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1D416E2FD222F30093AA05 /* Build configuration list for PBXNativeTarget "MyBriefingWidgetExtension" */;
+			buildPhases = (
+				6E1D41582FD222F20093AA05 /* Sources */,
+				6E1D41592FD222F20093AA05 /* Frameworks */,
+				6E1D415A2FD222F20093AA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6E1D41622FD222F20093AA05 /* MyBriefingWidget */,
+			);
+			name = MyBriefingWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MyBriefingWidgetExtension;
+			productReference = 6E1D415C2FD222F20093AA05 /* MyBriefingWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +206,9 @@
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					6E017EEC2FC5F4B1004C8831 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					6E1D415B2FD222F20093AA05 = {
 						CreatedOnToolsVersion = 26.5;
 					};
 				};
@@ -100,12 +228,20 @@
 			projectRoot = "";
 			targets = (
 				6E017EEC2FC5F4B1004C8831 /* MyBriefing */,
+				6E1D415B2FD222F20093AA05 /* MyBriefingWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6E017EEB2FC5F4B1004C8831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1D415A2FD222F20093AA05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +255,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F172D2FC62BA3002E99C3 /* HealthManager.swift in Sources */,
+				6E4F172F2FC631EE002E99C3 /* CalendarManager.swift in Sources */,
+				6E4F17312FC633F5002E99C3 /* WorkoutManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1D41582FD222F20093AA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E1D416B2FD222F30093AA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E1D415B2FD222F20093AA05 /* MyBriefingWidgetExtension */;
+			targetProxy = 6E1D416A2FD222F30093AA05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6E017EF62FC5F4B5004C8831 /* Debug */ = {
@@ -244,12 +398,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyBriefing/MyBriefing.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN225A5M3W;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBriefing/Info.plist;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "This app needs calendar access to show your daily events.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs to read sleep data to show your daily sleep duration.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -267,6 +427,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ygujer.MyBriefing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -286,12 +447,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyBriefing/MyBriefing.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN225A5M3W;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBriefing/Info.plist;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "This app needs calendar access to show your daily events.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs to read sleep data to show your daily sleep duration.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -309,12 +476,105 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ygujer.MyBriefing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		6E1D416F2FD222F30093AA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyBriefingWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN225A5M3W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBriefingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBriefingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ygujer.MyBriefing.MyBriefingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		6E1D41702FD222F30093AA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyBriefingWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AN225A5M3W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBriefingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBriefingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ygujer.MyBriefing.MyBriefingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,6 +600,15 @@
 			buildConfigurations = (
 				6E017EF92FC5F4B5004C8831 /* Debug */,
 				6E017EFA2FC5F4B5004C8831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1D416E2FD222F30093AA05 /* Build configuration list for PBXNativeTarget "MyBriefingWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1D416F2FD222F30093AA05 /* Debug */,
+				6E1D41702FD222F30093AA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
